@@ -363,8 +363,8 @@ h1 .subtitle {
 .wizard-card .choice .icon {
   text-align: center;
   vertical-align: middle;
-  height: 116px;
-  width: 116px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   background-color: #999999;
   color: #FFFFFF;
@@ -375,8 +375,16 @@ h1 .subtitle {
 }
 .wizard-card .choice i {
   font-size: 30px;
-  line-height: 111px;
+  line-height: 87px;
 }
+
+/* new */
+.wizard-card .choice i:hover, .wizard-card .choice i:active, .wizard-card .choice i:focus {
+  color: #2ca8ff;
+}
+
+/* new  */
+
 .wizard-card .choice:hover .icon, .wizard-card .choice.active .icon {
   border-color: #2ca8ff;
 }

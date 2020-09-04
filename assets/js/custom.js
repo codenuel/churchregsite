@@ -1,16 +1,28 @@
-const newUser = document.getElementById("new-user");
-const reUser = document.getElementById("re-user");
+// const newUser = document.getElementById("new-user");
+// const reUser = document.getElementById("re-user");
 const nextButton = document.getElementById("next-button");
 
+document.getElementById("form2").style.display="none";
+document.getElementById("form3").style.display="none";
 
-function selectUser(){
-    if(newUser){
-        alert("New")
-    }else if(reUser){
-        alert("registered before")
-    }
-    else{
-        alert("Please choose an option")
-    }
+
+
+if(document.getElementById('new-user').clicked == true)
+{
+   alert("button was clicked");
 }
-nextButton.addEventListener('click', selectUser)
+
+
+document.getElementById('next-button').addEventListener('click', () => {
+document.getElementById('form1').style.display = 'none';
+document.getElementById('form3').style.display = 'none';
+document.getElementById('form2').style.display = 'block';
+})
+
+// document.getElementById('next-button').addEventListener('click', () => {
+// document.getElementById('form1').style.display = 'none';
+// document.getElementById('form2').style.display = 'none';
+// document.getElementById('form3').style.display = 'block';
+// })
+
+
